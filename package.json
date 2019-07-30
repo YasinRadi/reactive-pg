@@ -1,0 +1,56 @@
+{
+  "name": "reactive-pg",
+  "version": "1.0.0",
+  "description": "An Electron + React + Typescript + PostgreSQL application to automate data translation.",
+  "scripts": {
+    "postinstall": "electron-builder install-app-deps",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "eslint 'src/**/*.{ts,tsx,js}'",
+    "start": "gulp start"
+  },
+  "main": "./dist/main.js",
+  "repository": "https://github.com/YasinRadi/reactive-pg.git",
+  "keywords": [
+    "Electron",
+    "React",
+    "Typescript",
+    "PostgreSQL",
+    "translation"
+  ],
+  "author": "Yasin Radi",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "@types/node": "^12.6.8",
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.5",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "electron": "^2.0.18",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-prettier": "^3.1.0",
+    "gulp": "^4.0.2",
+    "node-pg": "^1.0.1",
+    "prettier": "^1.18.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "typescript": "^2.9.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/jest": "^24.0.15",
+    "@types/pg": "^7.4.14",
+    "del": "^5.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-css": "^0.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-typescript": "^5.0.1"
+  }
+}
